@@ -1,0 +1,22 @@
+@{
+    ViewData["Title"] = "Página principal";
+}
+
+<div class="fondo h-100">
+    <div class="card text-center bg-transparent border-0">
+        <h1 class="card-header bg-transparent border-0 text-danger">Libreria</h1>
+        <div class="card-body">
+            <h2 class="display-4 card-title">Libreria oonline con mucha variedad</h2>
+            <p class="card-text lead fw-semibold">Lee cuando quieras</p>
+            <p class="card-text lead">¿Quieres Leer ya? Presiona el siguiente botón para iniciar la experiencia de Leer online</p>
+            @if (User.Identity?.IsAuthenticated == true)
+            {
+                <a asp-controller="Libros" class="btn btn-danger">Ver catálogo de Libros</a>
+            }
+            else
+            {
+                <a asp-controller="Auth" class="btn btn-danger">Comenzar</a>
+            }
+        </div>
+    </div>
+</div>
