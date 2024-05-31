@@ -7,11 +7,11 @@
     </div>
     @if (User.Identity?.IsAuthenticated == true)
     {
-        <a class="nav-link" asp-controller="Perfil">Hola @(User.Identity.Name)!</a>
-        <a class="nav-link" asp-controller="Auth" asp-action="Salir">Salir</a>
+        <a class="nav-link mx-3 fw-bold" asp-controller="Perfil">Hola @(User.Identity.Name)!</a>
+        <a class="nav-link mx-3 fw-bold" asp-controller="Auth" asp-action="Salir">Salir</a>
     }
     else
     {
-        <a class="nav-link" asp-controller="Auth" asp-action="Index">Iniciar sesión</a>
+        <a class="nav-link mx-3 fw-bold" asp-controller="Auth" asp-action="Index">Iniciar sesión</a>
     }
 </div>

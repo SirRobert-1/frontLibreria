@@ -84,3 +84,4 @@ C:\Users\WIN 11\Desktop\frontLibreria\obj\Debug\net8.0\refint\frontendnet.dll
 C:\Users\WIN 11\Desktop\frontLibreria\obj\Debug\net8.0\frontendnet.pdb
 C:\Users\WIN 11\Desktop\frontLibreria\obj\Debug\net8.0\frontendnet.genruntimeconfig.cache
 C:\Users\WIN 11\Desktop\frontLibreria\obj\Debug\net8.0\ref\frontendnet.dll
+C:\Users\WIN 11\Desktop\frontLibreria\obj\Debug\net8.0\frontendnet.sourcelink.json

@@ -3,12 +3,12 @@
 <div class="me-auto navbar-nav">
     @if (User.Identity?.IsAuthenticated == true)
     {
-        <a class="nav-link" asp-controller="Home" asp-action="Index">Inicio</a>
-        <a class="nav-link" asp-controller="Libros" asp-action="Index">Libros</a>
+        <a class="nav-link mx-3 fw-bold" asp-controller="Home" asp-action="Index">Inicio</a>
+        <a class="nav-link mx-3 fw-bold" asp-controller="Libros" asp-action="Index">Libros</a>
         @if (User.FindFirstValue(ClaimTypes.Role) == "Administrador")
         {
-            <a class="nav-link" asp-controller="Generos" asp-action="Index">Generos</a>
-            <a class="nav-link" asp-controller="Usuarios" asp-action="Index">Usuarios</a>
+            <a class="nav-link mx-3 fw-bold" asp-controller="Generos" asp-action="Index">Generos</a>
+            <a class="nav-link mx-3 fw-bold" asp-controller="Usuarios" asp-action="Index">Usuarios</a>
         }
     }
 </div>
